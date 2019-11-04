@@ -12,9 +12,7 @@ public class PageController {
 	public String home(@RequestParam(defaultValue="DefeultName") String name,ModelMap ModelMap) {
 		
 		System.out.println(name);		
-		ModelMap.put("name", name);
-	
-				
+		ModelMap.put("name", name);		
 		return "pages/home";
 	}
 }
